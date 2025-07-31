@@ -26,16 +26,18 @@ A mini-project developed using **Kali Linux** and **pure Bash scripting** that s
 ---
 
 ## ⚙️ How It Works
+1. **Note**
+    In script make sure you change ip address according to your device ip address to successfully execute the script
 
-1. **Live Host Discovery**:  
+2. **Live Host Discovery**:  
    Uses `netdiscover` to identify active IP addresses on the network.
 
-2. **Port & OS Scanning**:  
+3. **Port & OS Scanning**:  
    For each discovered IP, `nmap -A` is used to gather:
    - Open ports and services
    - Operating system details
 
-3. **Result Logging**:
+4. **Result Logging**:
    - All raw `nmap` results are saved in `results_<ip>.txt`
    - A human-readable `dashboard.txt` summarizes each host
    - `defense.txt` provides hardening suggestions
